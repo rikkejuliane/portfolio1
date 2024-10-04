@@ -1,0 +1,16 @@
+:root {
+  --light-purple: #E4DFFE;
+  --dark-purple: #6A44E3;
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --bg-color:var(--light-purple);
+  --primary-color:var(--dark-purple);
+  --text-color:var(--black);
+}
+
+.dark-mode {
+  --bg-color:var(--dark-purple);
+  --primary-color:var(--light-purple);
+  --text-color:var(--white);
+}

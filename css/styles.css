@@ -1,0 +1,155 @@
+@import url("variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Laisha";
+  src: url("../fonts/laisha.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TOGGLE SWITCH - From Uiverse.io by Madflows */
+.toggle-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transform: scale(0.7); /* Adjust this value to shrink or enlarge the switch */
+  transform-origin: top right; /* Keep the toggle at the top-right corner */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.toggle-switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  --light: #e4dffe;
+  --dark: #6a44e3;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* HEADER */
+body {
+  background-color: var(--bg-color);
+}
+
+.center-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 350px;
+  text-align: right;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-family: "Laisha", sans-serif;
+  font-size: 200px;
+  line-height: 0.8;
+}
+
+h2 {
+  color: var(--text-color);
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  align-items: flex-end;
+  position: relative;
+  right: -350px;
+}
+
+#arrow {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* MAIN */
+/* Navigation bar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 35px;
+}
+
+.nav-links ul{
+list-style: none;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between icons */
+  margin-bottom: 45px;
+}
