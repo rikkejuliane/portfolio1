@@ -242,6 +242,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 100px;
 }
 
 /* About section */
@@ -274,11 +275,11 @@ p {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
+  padding-bottom: 15px;
 }
 
 .p-about {
   width: 540px;
-  padding-bottom: 15px;
 }
 
 .profile-picture {
@@ -291,7 +292,7 @@ p {
   justify-content: center;
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 */
 
@@ -302,25 +303,44 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding-top: 100px;
 }
 
-.rainydays {
+.rainydays-wrapper,
+.csm-wrapper,
+.tmd-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rainydays,
+.csm,
+.tmd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 50px;
 }
 
-.rainydays-img {
+.rainydays-img,
+.csm-img,
+.tmd-img {
   width: 515px;
   height: 385px;
   overflow: auto;
 }
 
-.rainydays-img img {
+.rainydays-img img,
+.csm-img img,
+.tmd-img img {
   width: 100%; /* Image will take the full width of the container */
   height: auto;
 }
 
-.rainydays-text{
+.rainydays-text,
+.cms-text,
+.tmd-text {
   width: 554px;
 }
 
@@ -328,4 +348,53 @@ h4 {
   color: var(--text-color);
   font-family: "Laisha", sans-serif;
   font-size: 40px;
+  padding-bottom: 10px;
 }
+
+.tech-icons {
+  padding-bottom: 15px;
+}
+
+.tech-icons img {
+  height: 40px;
+  width: 40px;
+}
+
+.repo-live-links {
+  display: flex;
+  gap: 35px;
+}
+
+.repo-live-links a{
+  display: flex; 
+  flex-direction: row;
+  text-decoration: none;
+}
+
+#arrow-projects {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 190px;
+}
+
+/* Skills */ 
+.skills {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.tech-icons-skills {
+  display: flex;
+  padding-bottom: 100px;
+  gap: 30px;
+}
+.tech-icons-skills img{
+  width: 68px;
+  height: 68px;
+}
+
