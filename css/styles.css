@@ -398,3 +398,49 @@ h4 {
   height: 68px;
 }
 
+/* Contact */ 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.contact p {
+  width: 646px;
+}
+
+.contact a[href^="mailto:"]
+{ 
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Hide the dark mode arrow by default */
+#dark-mode-arrow {
+  display: none;
+}
+
+/* When dark mode is active, show the dark mode arrow and hide the light mode arrow */
+.dark-mode #dark-mode-arrow {
+  display: block;
+}
+
+.dark-mode #light-mode-arrow {
+  display: none;
+}
+
+/* Both arrows take the same space */
+dotlottie-player {
+  position: absolute;  /* They will be stacked in the same position */
+  width: 300px;
+  height: 300px;
+  left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Center the Lottie player by shifting it left by 50% of its width */
+    bottom: 0;
+    padding-top: 100px;
+}
+
+
