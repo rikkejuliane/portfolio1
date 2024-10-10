@@ -15,7 +15,6 @@
   box-sizing: border-box;
 }
 
-
 /* TOGGLE SWITCH - From Uiverse.io by Madflows */
 .toggle-wrapper {
   position: fixed;
@@ -178,21 +177,23 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 /* About section */
 .about-wrapper {
-   display: flex;
+  display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 
 .about {
   display: flex;
   justify-content: space-between; /* Ensure the text and image are spread across the width */
   align-items: center;
-  gap: 50px;
+  gap: 90px;
 }
 
 h3 {
@@ -232,7 +233,7 @@ p {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 
 .rainydays-wrapper,
@@ -271,7 +272,7 @@ p {
 .rainydays-text,
 .cms-text,
 .tmd-text {
-  width: 540px;
+  width: 545px;
 }
 
 h4 {
@@ -316,7 +317,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 
 .tech-icons-skills {
@@ -342,9 +343,8 @@ h4 {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* padding-bottom: 300px;
-  padding-top: 170px; */
-  padding: 170px 80px 300px 80px;
+  padding-bottom: 300px;
+  padding-top: 170px;
 }
 
 .contact p {
@@ -393,10 +393,9 @@ dotlottie-player {
     font-size: 20px;
   }
 
-  .about{
+  .about {
     flex-wrap: wrap-reverse;
     justify-content: center;
-
   }
 
   .rainydays,
@@ -412,11 +411,13 @@ dotlottie-player {
 
   #hamburger-menu {
     position: fixed;
-        top: 40px;
-        left: 25px;
-        z-index: 10;
-        display: block;
-        cursor: pointer;
+    top: 40px;
+    left: 20px;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+    background-color: #6a44e3;
+    padding: 10px;
   }
 
   .navbar.active {
@@ -438,12 +439,10 @@ dotlottie-player {
     width: 70px;
     height: 50px;
   }
-
-  
 }
 
 /* tablet and small laptops */
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 1150px) {
   h1 {
     font-size: 98px;
   }
@@ -452,8 +451,15 @@ dotlottie-player {
     font-size: 25px;
   }
 
-  .about{
+  .about {
     flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 20px;
+    width: 99%;
+  }
+
+  .projects-wrapper h3 {
+    display: flex;
     justify-content: center;
   }
 
@@ -461,10 +467,11 @@ dotlottie-player {
   .csm,
   .tmd {
     flex-wrap: wrap-reverse;
+    width: 90%;
   }
 }
 /* laptop to larger desktops */
-@media screen and (min-width: 901px) and (max-width: 1440px) {
+@media screen and (min-width: 1151px) and (max-width: 1440px) {
 }
 /* larger monitors */
 @media screen and (min-width: 1441px) {
