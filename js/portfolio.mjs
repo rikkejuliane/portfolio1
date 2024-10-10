@@ -79,6 +79,15 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => observer.observe(section));
 
 
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navbar = document.querySelector('.navbar');
+
+hamburgerMenu.addEventListener('click', () => {
+    // Toggle the "active" class on both the hamburger and the navbar
+    hamburgerMenu.classList.toggle('active');
+    navbar.classList.toggle('active');
+});
+
 
 
 

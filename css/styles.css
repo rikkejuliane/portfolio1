@@ -1,6 +1,6 @@
 @import url("variables.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 
 @font-face {
   font-family: "Laisha";
@@ -15,9 +15,6 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
 
 /* TOGGLE SWITCH - From Uiverse.io by Madflows */
 .toggle-wrapper {
@@ -99,104 +96,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.center-header-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-top: 250px;
-}
-
-h1 {
-  color: var(--primary-color);
-  font-family: "Laisha", "Fugaz One", sans-serif;
-  font-size: 200px;
-  line-height: 0.8;
-  white-space: nowrap; /* Prevent the text from wrapping */
-  display: inline-block;
-}
-
-/* Tracking In Contract Animation - Source: Animista.net */
-.tracking-in-contract-bck {
-  -webkit-animation: tracking-in-contract-bck 2s
-    cubic-bezier(0.445, 0.05, 0.55, 0.95) both;
-  animation: tracking-in-contract-bck 2s cubic-bezier(0.445, 0.05, 0.55, 0.95)
-    both;
-}
-
-@-webkit-keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px);
-    transform: translateZ(400px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
-@keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px);
-    transform: translateZ(400px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
-h2 {
-  color: var(--text-color);
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 40px;
-  align-items: flex-end;
-  position: relative;
-  right: -350px;
-}
-
-#arrow {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 140px;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0); /* Original position */
-  }
-  40% {
-    transform: translateY(-10px); /* Move up */
-  }
-  60% {
-    transform: translateY(-5px); /* Move slightly down */
-  }
-}
-
-#arrow:hover {
-  cursor: pointer;
-}
-
 /* MAIN */
 /* Navigation bar */
 .navbar {
@@ -213,6 +112,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .logo {
@@ -238,11 +138,11 @@ h2 {
 }
 
 .nav-links a.active::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -22px; /* Slight offset from the right */
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   height: 35px; /* Adjust the height to match the height of the link */
   width: 4px; /* Width of the stroke */
   border-radius: 10px;
@@ -252,7 +152,7 @@ h2 {
 
 /* Bold for Active Link */
 .nav-links a.active {
-  font-weight: 800;  /* Make the active link bold */
+  font-weight: 800; /* Make the active link bold */
 }
 
 .contact-icons {
@@ -267,31 +167,31 @@ h2 {
   transition: transform 0.3s ease; /* Smooth transition for the scaling */
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 /* Main content*/
 .main {
   margin-left: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 100px;
+  padding-top: 100px;
 }
 
 /* About section */
 .about-wrapper {
-  display: flex;
+   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 0 80px;
 }
 
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Ensure the text and image are spread across the width */
   align-items: center;
-  margin: 0 auto;
   gap: 50px;
 }
 
@@ -323,23 +223,16 @@ p {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
-*/
 
-/* Projects */ 
+/* Projects */
 .projects-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
-}
-
-.projects-wrapper h3{
-  display: flex;
-  justify-content: flex-start;
+  padding: 0 80px;
 }
 
 .rainydays-wrapper,
@@ -363,7 +256,7 @@ p {
 .rainydays-img,
 .csm-img,
 .tmd-img {
-  width: 515px;
+  width: 550px;
   height: 385px;
   overflow: auto;
 }
@@ -378,7 +271,7 @@ p {
 .rainydays-text,
 .cms-text,
 .tmd-text {
-  width: 554px;
+  width: 550px;
 }
 
 h4 {
@@ -485,4 +378,75 @@ dotlottie-player {
     -50%
   ); /* Center the Lottie player by shifting it left by 50% of its width */
   bottom: 0;
+}
+
+/* MEDIA QUERIES */
+/* mobile to small tablet */
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .navbar {
+    transform: translateX(-100%); /* Hide the navbar off the screen */
+    transition: transform 0.3s ease;
+  }
+
+  #hamburger-menu {
+    position: fixed;
+        top: 40px;
+        left: 25px;
+        z-index: 10;
+        display: block;
+        cursor: pointer;
+  }
+
+  .navbar.active {
+    transform: translateX(0); /* Bring the navbar back on screen when active */
+  }
+
+  .logo {
+    position: relative;
+    top: 80px; /* Move the logo down when the navbar is shown */
+    transition: top 0.3s ease;
+  }
+
+  #hamburger-menu.active + .navbar .logo {
+    top: 20px; /* Reset the logo to its original position when the navbar is hidden */
+  }
+
+  /* Adjust hamburger icon size */
+  #hamburger {
+    width: 70px;
+    height: 50px;
+  }
+
+  
+}
+
+/* tablet and small laptops */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 98px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .rainydays,
+  .csm,
+  .tmd {
+    flex-wrap: wrap-reverse;
+  }
+}
+/* laptop to larger desktops */
+@media screen and (min-width: 901px) and (max-width: 1440px) {
+}
+/* larger monitors */
+@media screen and (min-width: 1441px) {
 }
