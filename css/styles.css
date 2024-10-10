@@ -256,7 +256,7 @@ p {
 .rainydays-img,
 .csm-img,
 .tmd-img {
-  width: 550px;
+  width: 540px;
   height: 385px;
   overflow: auto;
 }
@@ -271,7 +271,7 @@ p {
 .rainydays-text,
 .cms-text,
 .tmd-text {
-  width: 550px;
+  width: 540px;
 }
 
 h4 {
@@ -316,6 +316,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
+  padding: 0 80px;
 }
 
 .tech-icons-skills {
@@ -341,8 +342,9 @@ h4 {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 300px;
-  padding-top: 170px;
+  /* padding-bottom: 300px;
+  padding-top: 170px; */
+  padding: 170px 80px 300px 80px;
 }
 
 .contact p {
@@ -391,6 +393,18 @@ dotlottie-player {
     font-size: 20px;
   }
 
+  .about{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+  }
+
+  .rainydays,
+  .csm,
+  .tmd {
+    flex-wrap: wrap-reverse;
+  }
+
   .navbar {
     transform: translateX(-100%); /* Hide the navbar off the screen */
     transition: transform 0.3s ease;
@@ -436,6 +450,11 @@ dotlottie-player {
 
   h2 {
     font-size: 25px;
+  }
+
+  .about{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
   }
 
   .rainydays,
