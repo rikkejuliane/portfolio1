@@ -1,5 +1,6 @@
 @import url("variables.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 @font-face {
   font-family: "Laisha";
@@ -12,6 +13,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* TOGGLE SWITCH - From Uiverse.io by Madflows */
@@ -105,7 +110,7 @@ body {
 
 h1 {
   color: var(--primary-color);
-  font-family: "Laisha", sans-serif;
+  font-family: "Laisha", "Fugaz One", sans-serif;
   font-size: 200px;
   line-height: 0.8;
   white-space: nowrap; /* Prevent the text from wrapping */
@@ -257,6 +262,11 @@ h2 {
   margin-bottom: 45px;
 }
 
+.contact-icons a:hover svg {
+  transform: scale(1.5); /* Scale up the icon */
+  transition: transform 0.3s ease; /* Smooth transition for the scaling */
+}
+
 /* Main content*/
 .main {
   margin-left: 120px;
@@ -287,7 +297,7 @@ h2 {
 
 h3 {
   color: var(--primary-color);
-  font-family: "Laisha", sans-serif;
+  font-family: "Laisha", "Fugaz One", sans-serif;
   font-size: 50px;
   padding-bottom: 28px;
 }
@@ -325,6 +335,11 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.projects-wrapper h3{
+  display: flex;
+  justify-content: flex-start;
 }
 
 .rainydays-wrapper,
@@ -368,7 +383,7 @@ p {
 
 h4 {
   color: var(--text-color);
-  font-family: "Laisha", sans-serif;
+  font-family: "Laisha", "Fugaz One", sans-serif;
   font-size: 40px;
   padding-bottom: 10px;
 }
@@ -418,6 +433,12 @@ h4 {
 .tech-icons-skills img {
   width: 68px;
   height: 68px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-icons-skills img:hover {
+  transform: scale(1.2); /* Scale up the icon */
+  filter: brightness(1.2);
 }
 
 /* Contact */
@@ -427,8 +448,8 @@ h4 {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 350px;
-  padding-top: 150px;
+  padding-bottom: 300px;
+  padding-top: 170px;
 }
 
 .contact p {
