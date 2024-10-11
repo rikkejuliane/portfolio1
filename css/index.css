@@ -93,6 +93,7 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .center-header-wrapper {
