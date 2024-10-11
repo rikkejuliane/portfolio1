@@ -80,17 +80,45 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
+// Hamburger menu and navbar toggle
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const navbar = document.querySelector(".navbar");
 const hamburgerIcon = document.getElementById("hamburger");
 
-// Toggle navbar and hamburger animation
-hamburgerMenu.addEventListener("click", () => {
+// Function to toggle the navbar and hamburger icon
+const toggleNavbar = () => {
   navbar.classList.toggle("active");
   hamburgerIcon.classList.toggle("hamburger-active");
+};
+
+hamburgerMenu.addEventListener("click", toggleNavbar);
+
+// Get the Lottie arrows and add event listeners for mobile (<600px)
+const lightModeArrow = document.getElementById("light-mode-arrow");
+const darkModeArrow = document.getElementById("dark-mode-arrow");
+
+const isMobile = () => window.innerWidth <= 600; // Mobile check
+
+// Add event listener for the Light mode Lottie arrow click (only on mobile)
+lightModeArrow.addEventListener("click", () => {
+  if (isMobile()) {
+    toggleNavbar();
+  }
 });
 
+// Add event listener for the Dark mode Lottie arrow click (only on mobile)
+darkModeArrow.addEventListener("click", () => {
+  if (isMobile()) {
+    toggleNavbar();
+  }
+});
 
+window.addEventListener("resize", () => {
+  if (!isMobile()) {
+    navbar.classList.remove("active");
+    hamburgerIcon.classList.remove("hamburger-active");
+  }
+});
 
 // Fun console log Easter Egg
 console.log(
