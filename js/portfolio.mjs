@@ -81,12 +81,17 @@ sections.forEach(section => observer.observe(section));
 
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const navbar = document.querySelector('.navbar');
+const hamburgerIcon = document.getElementById('hamburger');
 
+// Toggle navbar and hamburger animation
 hamburgerMenu.addEventListener('click', () => {
-    // Toggle the "active" class on both the hamburger and the navbar
-    hamburgerMenu.classList.toggle('active');
-    navbar.classList.toggle('active');
+    navbar.classList.toggle('active'); // Toggle navbar visibility
+    hamburgerIcon.classList.toggle('hamburger-active'); // Toggle hamburger icon animation
 });
+
+
+
+
 
 
 

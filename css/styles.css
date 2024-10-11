@@ -395,13 +395,17 @@ dotlottie-player {
     font-size: 40px;
   }
 
+  .about-wrapper {
+    
+  }
+
   .about {
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 0 auto;
-    width: 85%;
+    padding: 0 80px;
   }
 
   .about p {
@@ -443,13 +447,12 @@ dotlottie-player {
 
   #hamburger-menu {
     position: fixed;
-    top: 30px;
-    left: 20px;
+    top: 20px;
+    left: 30px;
     z-index: 10;
     display: block;
     cursor: pointer;
     background-color: #6a44e3;
-    padding: 5px;
   }
 
   .navbar.active {
@@ -458,23 +461,68 @@ dotlottie-player {
 
   .logo {
     position: relative;
-    top: 80px; /* Move the logo down when the navbar is shown */
+    top: 50px; /* Move the logo down when the navbar is shown */
     transition: top 0.3s ease;
   }
 
   .nav-links {
-    padding-top: 50px;
+    padding-top: 70px;
+  }
+
+  .nav-links a{
+    padding: 15px 0;
+  }
+
+  .nav-links a.active::before {
+    
+    height: 25px; /* Adjust the height to match the height of the link */
+   
   }
 
   #hamburger-menu.active + .navbar .logo {
     top: 20px; /* Reset the logo to its original position when the navbar is hidden */
   }
 
-  /* Adjust hamburger icon size */
-  #hamburger {
-    width: 70px;
-    height: 50px;
-  }
+/* Base size of the hamburger */
+#hamburger {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the lines */
+#top-line,
+#bottom-line,
+#middle-line {
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform-origin: center;
+}
+
+/* Middle line is visible initially */
+#middle-line {
+  opacity: 1;
+}
+
+/* When the hamburger is in 'X' mode */
+.hamburger-active #top-line {
+  transform: rotate(45deg) translate(5px, 5px); /* Move down and rotate to form the top of the X */
+}
+
+.hamburger-active #bottom-line {
+  transform: rotate(-45deg) translate(5px, -5px); /* Move up and rotate to form the bottom of the X */
+}
+
+.hamburger-active #middle-line {
+  opacity: 0; /* Hide the middle line */
+}
+
+
 }
 
 /* tablet and small laptops */
