@@ -348,7 +348,7 @@ h4 {
 }
 
 .contact p {
-  width: 646px;
+  width: 60%;
 }
 
 .contact a[href^="mailto:"] {
@@ -385,16 +385,36 @@ dotlottie-player {
 /* MEDIA QUERIES */
 /* mobile to small tablet */
 @media screen and (min-width: 360px) and (max-width: 600px) {
-  h1 {
-    font-size: 55px;
+  .main {
+    /* margin-left: 0px; */
+    width: 90%;
+    margin: 0 auto;
   }
 
-  h2 {
-    font-size: 20px;
+  h3 {
+    font-size: 40px;
   }
 
   .about {
     flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .about p {
+    width: 85%;
+  }
+
+  .profile-picture {
+    height: 400px;
+    height: 400px;
+  }
+
+  .projects-wrapper h3 {
+    display: flex;
     justify-content: center;
   }
 
@@ -402,6 +422,18 @@ dotlottie-player {
   .csm,
   .tmd {
     flex-wrap: wrap-reverse;
+    gap: 30px;
+    width: 85%;
+  }
+
+  .rainydays-img,
+  .csm-img,
+  .tmd-img {
+    margin: 0 auto;
+  }
+
+  .skills {
+    margin: 0 auto;
   }
 
   .navbar {
@@ -411,13 +443,13 @@ dotlottie-player {
 
   #hamburger-menu {
     position: fixed;
-    top: 40px;
+    top: 30px;
     left: 20px;
     z-index: 10;
     display: block;
     cursor: pointer;
     background-color: #6a44e3;
-    padding: 10px;
+    padding: 5px;
   }
 
   .navbar.active {
@@ -428,6 +460,10 @@ dotlottie-player {
     position: relative;
     top: 80px; /* Move the logo down when the navbar is shown */
     transition: top 0.3s ease;
+  }
+
+  .nav-links {
+    padding-top: 50px;
   }
 
   #hamburger-menu.active + .navbar .logo {
@@ -443,14 +479,6 @@ dotlottie-player {
 
 /* tablet and small laptops */
 @media screen and (min-width: 601px) and (max-width: 1150px) {
-  h1 {
-    font-size: 98px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
   .about {
     flex-wrap: wrap-reverse;
     justify-content: center;
