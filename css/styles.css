@@ -15,6 +15,7 @@
   box-sizing: border-box;
 }
 
+
 /* TOGGLE SWITCH - From Uiverse.io by Madflows */
 .toggle-wrapper {
   position: fixed;
@@ -317,7 +318,6 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  /* padding: 0 80px; */
 }
 
 .tech-icons-skills {
@@ -348,7 +348,7 @@ h4 {
 }
 
 .contact p {
-  width: 60%;
+ width: 70%;
 }
 
 .contact a[href^="mailto:"] {
@@ -386,7 +386,7 @@ dotlottie-player {
 /* mobile to small tablet */
 @media screen and (min-width: 360px) and (max-width: 600px) {
   .main {
-    /* margin-left: 0px; */
+    margin-left: 0px;
     width: 90%;
     margin: 0 auto;
   }
@@ -433,9 +433,15 @@ dotlottie-player {
     margin: 0 auto;
   }
 
-  .skills {
-    margin: 0 auto;
-  }
+ .contact p {
+  width: 100%;
+ }
+
+ .contact, .skills {
+  margin-left: 100px;
+  gap: 10px;
+  width: 100%;
+ }
 
   .navbar {
     transform: translateX(-100%); /* Hide the navbar off the screen */
@@ -542,10 +548,4 @@ dotlottie-player {
     flex-wrap: wrap-reverse;
     width: 90%;
   }
-}
-/* laptop to larger desktops */
-@media screen and (min-width: 1151px) and (max-width: 1440px) {
-}
-/* larger monitors */
-@media screen and (min-width: 1441px) {
 }
