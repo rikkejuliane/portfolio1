@@ -20,9 +20,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  transform: scale(0.7); /* Adjust this value to shrink or enlarge the switch */
-  transform-origin: top right; /* Keep the toggle at the top-right corner */
-  z-index: 1000; /* Ensure it stays on top */
+  transform: scale(0.7);
+  transform-origin: top right;
+  z-index: 1000;
 }
 
 .toggle-switch {
@@ -110,7 +110,7 @@ h1 {
   font-family: "Laisha", "Fugaz One", sans-serif;
   font-size: 150px;
   line-height: 0.8;
-  white-space: nowrap; /* Prevent the text from wrapping */
+  white-space: nowrap;
   display: inline-block;
 }
 

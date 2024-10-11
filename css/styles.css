@@ -15,15 +15,22 @@
   box-sizing: border-box;
 }
 
+/* HEADER */
+body {
+  background-color: var(--bg-color);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  scroll-behavior: smooth;
+}
 
 /* TOGGLE SWITCH - From Uiverse.io by Madflows */
 .toggle-wrapper {
   position: fixed;
   top: 20px;
   right: 20px;
-  transform: scale(0.7); /* Adjust this value to shrink or enlarge the switch */
-  transform-origin: top right; /* Keep the toggle at the top-right corner */
-  z-index: 1000; /* Ensure it stays on top */
+  transform: scale(0.7);
+  transform-origin: top right;
+  z-index: 1000;
 }
 
 .toggle-switch {
@@ -88,14 +95,6 @@
   box-shadow: none;
 }
 
-/* HEADER */
-body {
-  background-color: var(--bg-color);
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  scroll-behavior: smooth;
-}
-
 /* MAIN */
 /* Navigation bar */
 .navbar {
@@ -140,19 +139,18 @@ body {
 .nav-links a.active::before {
   content: "";
   position: absolute;
-  right: -22px; /* Slight offset from the right */
+  right: -22px;
   top: 50%;
   transform: translateY(-50%);
-  height: 35px; /* Adjust the height to match the height of the link */
-  width: 4px; /* Width of the stroke */
+  height: 35px;
+  width: 4px;
   border-radius: 10px;
   background-color: var(--bg-color);
   transition: all 0.3s ease;
 }
 
-/* Bold for Active Link */
 .nav-links a.active {
-  font-weight: 800; /* Make the active link bold */
+  font-weight: 800;
 }
 
 .contact-icons {
@@ -163,8 +161,8 @@ body {
 }
 
 .contact-icons a:hover svg {
-  transform: scale(1.5); /* Scale up the icon */
-  transition: transform 0.3s ease; /* Smooth transition for the scaling */
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
 }
 
 #hamburger-menu {
@@ -187,12 +185,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /* padding: 0 80px; */
 }
 
 .about {
   display: flex;
-  justify-content: space-between; /* Ensure the text and image are spread across the width */
+  justify-content: space-between;
   align-items: center;
   gap: 90px;
 }
@@ -234,7 +231,6 @@ p {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /* padding: 0 80px; */
 }
 
 .rainydays-wrapper,
@@ -266,7 +262,7 @@ p {
 .rainydays-img img,
 .csm-img img,
 .tmd-img img {
-  width: 100%; /* Image will take the full width of the container */
+  width: 100%;
   height: auto;
 }
 
@@ -332,7 +328,7 @@ h4 {
 }
 
 .tech-icons-skills img:hover {
-  transform: scale(1.2); /* Scale up the icon */
+  transform: scale(1.2);
   filter: brightness(1.2);
 }
 
@@ -348,7 +344,7 @@ h4 {
 }
 
 .contact p {
- width: 70%;
+  width: 70%;
 }
 
 .contact a[href^="mailto:"] {
@@ -356,12 +352,10 @@ h4 {
   text-decoration: none;
 }
 
-/* Hide the dark mode arrow by default */
 #dark-mode-arrow {
   display: none;
 }
 
-/* When dark mode is active, show the dark mode arrow and hide the light mode arrow */
 .dark-mode #dark-mode-arrow {
   display: block;
 }
@@ -370,15 +364,12 @@ h4 {
   display: none;
 }
 
-/* Both arrows take the same space */
 dotlottie-player {
-  position: absolute; /* They will be stacked in the same position */
+  position: absolute;
   width: 300px;
   height: 300px;
-  left: 50%; /* Center horizontally */
-  transform: translateX(
-    -50%
-  ); /* Center the Lottie player by shifting it left by 50% of its width */
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
 }
 
@@ -394,7 +385,6 @@ dotlottie-player {
   h3 {
     font-size: 40px;
   }
-
 
   .about {
     flex-wrap: wrap-reverse;
@@ -433,18 +423,19 @@ dotlottie-player {
     margin: 0 auto;
   }
 
- .contact p {
-  width: 100%;
- }
+  .contact p {
+    width: 100%;
+  }
 
- .contact, .skills {
-  margin-left: 100px;
-  gap: 10px;
-  width: 100%;
- }
+  .contact,
+  .skills {
+    margin-left: 100px;
+    gap: 10px;
+    width: 100%;
+  }
 
   .navbar {
-    transform: translateX(-100%); /* Hide the navbar off the screen */
+    transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
 
@@ -459,12 +450,12 @@ dotlottie-player {
   }
 
   .navbar.active {
-    transform: translateX(0); /* Bring the navbar back on screen when active */
+    transform: translateX(0);
   }
 
   .logo {
     position: relative;
-    top: 50px; /* Move the logo down when the navbar is shown */
+    top: 50px;
     transition: top 0.3s ease;
   }
 
@@ -472,60 +463,53 @@ dotlottie-player {
     padding-top: 70px;
   }
 
-  .nav-links a{
+  .nav-links a {
     padding: 15px 0;
   }
 
   .nav-links a.active::before {
-    
-    height: 25px; /* Adjust the height to match the height of the link */
-   
+    height: 25px;
   }
 
   #hamburger-menu.active + .navbar .logo {
-    top: 20px; /* Reset the logo to its original position when the navbar is hidden */
+    top: 20px;
   }
 
-/* Base size of the hamburger */
-#hamburger {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* Hamburger */
+  #hamburger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* Styling for the lines */
-#top-line,
-#bottom-line,
-#middle-line {
-  stroke: #fff;
-  stroke-width: 4;
-  stroke-linecap: round;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  transform-origin: center;
-}
+  #top-line,
+  #bottom-line,
+  #middle-line {
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-linecap: round;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform-origin: center;
+  }
 
-/* Middle line is visible initially */
-#middle-line {
-  opacity: 1;
-}
+  #middle-line {
+    opacity: 1;
+  }
 
-/* When the hamburger is in 'X' mode */
-.hamburger-active #top-line {
-  transform: rotate(45deg) translate(5px, 5px); /* Move down and rotate to form the top of the X */
-}
+  .hamburger-active #top-line {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
-.hamburger-active #bottom-line {
-  transform: rotate(-45deg) translate(5px, -5px); /* Move up and rotate to form the bottom of the X */
-}
+  .hamburger-active #bottom-line {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 
-.hamburger-active #middle-line {
-  opacity: 0; /* Hide the middle line */
-}
-
-
+  .hamburger-active #middle-line {
+    opacity: 0;
+  }
 }
 
 /* tablet and small laptops */
