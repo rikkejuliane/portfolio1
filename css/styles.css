@@ -320,6 +320,7 @@ h4 {
   display: flex;
   padding-bottom: 100px;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .tech-icons-skills img {
   width: 68px;
@@ -376,10 +377,16 @@ dotlottie-player {
 /* MEDIA QUERIES */
 /* mobile to small tablet */
 @media screen and (min-width: 360px) and (max-width: 600px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .main {
     margin-left: 0px;
     width: 90%;
     margin: 0 auto;
+    max-width: 90%;
   }
 
   h3 {
@@ -392,7 +399,7 @@ dotlottie-player {
     align-items: center;
     gap: 30px;
     margin: 0 auto;
-    padding: 0 80px;
+    width: 90%;
   }
 
   .about p {
@@ -400,8 +407,12 @@ dotlottie-player {
   }
 
   .profile-picture {
-    height: 400px;
-    height: 400px;
+    height: 300px;
+    height: 300px;
+  }
+
+  .projects-wrapper {
+    margin: 0;
   }
 
   .projects-wrapper h3 {
@@ -414,7 +425,7 @@ dotlottie-player {
   .tmd {
     flex-wrap: wrap-reverse;
     gap: 30px;
-    width: 85%;
+    width: 90%;
   }
 
   .rainydays-img,
@@ -423,15 +434,25 @@ dotlottie-player {
     margin: 0 auto;
   }
 
+  .rainydays-text,
+.cms-text,
+.tmd-text {
+  width: 300px;
+}
+
   .contact p {
     width: 100%;
   }
 
   .contact,
   .skills {
-    margin-left: 100px;
     gap: 10px;
     width: 100%;
+  }
+
+  .tech-icons-skills {
+    display: flex;
+    justify-content: center;
   }
 
   .navbar {
