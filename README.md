@@ -20,7 +20,7 @@ This portfolio was designed to provide a glimpse into my work as a front-end dev
 - Dedicated sections for **About**, **Projects**, **Skills**, and **Contact**.
 - Integrated Lottie animations for enhanced visual experience.
   
-### Technologies Used 🛠️   
+### Technologies Used  🛠️   
 - **HTML**
 - **CSS**
 - **JavaScript**
