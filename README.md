@@ -2,17 +2,17 @@
 Welcome to my personal portfolio website showcasing my journey as a front-end developer and my passion for web development and design. This portfolio contains my projects, skills, and information about me.
 
 ## Table of Contents  
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Projects](#projects)
-- [Live](#live)
-- [Contact](#contact)
+- [Overview](#overview-)
+- [Features](#features-)
+- [Technologies Used](#technologies-used-)
+- [Projects](#projects-)
+- [Live](#live-)
+- [Contact](#contact-)
 
-### Overview  
+### Overview 🔭  
 This portfolio was designed to provide a glimpse into my work as a front-end developer, with a focus on both aesthetics and functionality. It's fully responsive, ensuring an optimal experience across all devices.
 
-### Features  
+### Features 🔮  
 - Fully responsive design for mobile, tablet, and desktop views.
 - Interactive and animated hamburger menu for mobile navigation.
 - Dark mode toggle switch for improved readability.
