@@ -1,7 +1,8 @@
 # Rikke Juliane's Portfolio  
 Welcome to my personal portfolio website showcasing my journey as a front-end developer and my passion for web development and design. This portfolio contains my projects, skills, and information about me.
 
-## Table of Contents  
+
+### Table of Contents  
 - [Overview](#overview-)
 - [Features](#features-)
 - [Technologies Used](#technologies-used-)
@@ -9,8 +10,10 @@ Welcome to my personal portfolio website showcasing my journey as a front-end de
 - [Live](#live-)
 - [Contact](#contact-)
 
+
 ### Overview 🔭  
 This portfolio was designed to provide a glimpse into my work as a front-end developer, with a focus on both aesthetics and functionality. It's fully responsive, ensuring an optimal experience across all devices.
+
 
 ### Features 🔮  
 - Fully responsive design for mobile, tablet, and desktop views.
@@ -19,6 +22,7 @@ This portfolio was designed to provide a glimpse into my work as a front-end dev
 - Smooth scrolling navigation with highlighted active links.
 - Dedicated sections for **About**, **Projects**, **Skills**, and **Contact**.
 - Integrated Lottie animations for enhanced visual experience.
+
   
 ### Technologies Used  🛠️   
 - **HTML**
@@ -34,6 +38,7 @@ Here are some featured projects that you will find on my portfolio:
 
 Check out these projects in detail [here](https://rikkejuliane.netlify.app/portfolio.html#projects).
 
+
 ### Live 👩🏽‍💻  
 Want to check out my portfolio? 
 [My Portfolio](https://rikkejuliane.netlify.app/)
@@ -43,6 +48,6 @@ Want to check out my portfolio?
 Don’t hesitate to reach out to me or connect with me on social media if you have any questions, collaboration ideas, or an exciting new project in mind. I’m always open to new opportunities!   
 🩷 [Instagram](https://www.instagram.com/rikkejuliane/)  
 💙 [Linkedin](https://www.linkedin.com/in/rikkejuliane/)  
----
+
 
 Thank you for visiting my portfolio!
